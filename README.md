@@ -42,9 +42,17 @@ Details of the installation go here.
 All you need to do now is to create an appropriate defaults.json.  Use the included version for an example.
 
 
-# Testing
-Run this command:
-`python3 new_property.py -v -c -d 4s.np.defaults.json sites`
+# Running
+Run one of these commands:
+* `python3 new_property.py -v -c -d defaults.json sites`
+   * Processes Sites only
+* `python3 new_property.py -v -c -d defaults.json admins`
+   * Processes Admin Users only
+* `python3 new_property.py -v -c -d defaults.json groups`
+   * Processes Security Groups only
+* `python3 new_property.py -v -c -d defaults.json all`
+   * Processes Sites, Admin Users, and Security Groups
+   
 
 # Troubleshooting
 * You can add multiple "v"'s to the -v command line option.  
