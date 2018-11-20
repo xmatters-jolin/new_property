@@ -34,9 +34,9 @@ Details of the installation go here.
    5. `echo 'eval "$(pyenv init -)"' >> ~/.bash_profile` - [For Linux/Mac OS X] - makes sure Pyenv is initialized whenver you open a Terminal window.
    6. `pyenv global 3.7.1` - Sets Python v3.7.1 as your global instance of Python (Optional)
 * Install the Python [requests](http://docs.python-requests.org/en/master/) module
-   `pip install requests`
+   * `pip install requests`
 * Install the Python [openpyxl](https://openpyxl.readthedocs.io/en/stable/) module
-   `pip install openpyxl`
+   * `pip install openpyxl`
 
 ## new_property.py setup
 All you need to do now is to create an appropriate defaults.json.  Use the included version for an example.
