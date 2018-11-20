@@ -48,6 +48,6 @@ Run this command:
 
 # Troubleshooting
 * You can add multiple "v"'s to the -v command line option.  
-** A single "-v" means only show errors and warnings
-** A double "-vv" means to show errors, warnings, and info statements
-** A tripple "-vvv" means to show errors, warnings, info, and debug statements
+   * A single "-v" means only show errors and warnings
+   * A double "-vv" means to show errors, warnings, and info statements
+   * A tripple "-vvv" means to show errors, warnings, info, and debug statements
