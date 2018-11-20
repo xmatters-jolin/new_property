@@ -55,6 +55,73 @@ Run one of these commands:
    
 
 # Troubleshooting
+```
+python3 new_property.py -h
+
+usage: new_property.py [-h] [-c] [-d DEFAULTS_FILENAME]
+[-f PROPERTIES_FILENAME] [-i {np,prod}]
+[-l LOG_FILENAME] [-o OUT_DIRECTORY] [-p [PASSWORD]]
+[-s SUPERVISORS] [-U UDF_NAME] [-u USER] [-V] [-v]
+[-x XMOD_URL]
+{sites,admins,groups,all} ...
+
+Created by jolin@xmatters.com on 2018-11-18.
+Copyright 2018 xmatters, Inc. All rights reserved.
+
+Licensed under the Apache License 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+Distributed on an "AS IS" basis without warranties
+or conditions of any kind, either express or implied.
+
+USAGE
+
+positional arguments:
+{sites,admins,groups,all}
+sites               Use this command in order to only read and process Sites.
+admins              Use this command in order to only read and process Admins.
+groups              Use this command in order to only process Groups.
+all                 Use this command in order to process all worksheets from the infput file: Sites, Admins, Groups.
+
+optional arguments:
+
+-h, --help            show this help message and exit
+
+-c, --console         If specified, will echo all log output to the console at the requested verbosity based on the -v option
+
+-d DEFAULTS_FILENAME, --defaults DEFAULTS_FILENAME
+Specifes the name of the file containing default settings [default: defaults.json]
+
+-f PROPERTIES_FILENAME, --pfile PROPERTIES_FILENAME
+If not specified in the defaults file, use this for the input file .xlsx file. [default: None]
+
+-i {np,prod}, --itype {np,prod}
+Specifies whether we are updating the Production (prod) or Non-Production (np) instance. [default: np]
+
+-l LOG_FILENAME, --lfile LOG_FILENAME
+If not specified in the defaults file, use -l to specify the base name of the log file. The name will have a timestamp and .log appended to the end.
+
+-o OUT_DIRECTORY, --odir OUT_DIRECTORY
+If not specified in the defaults file, use -o to specify the file system location where the output files will be written.
+
+-p [PASSWORD]         If not specified in the defaults file, use -p to specify a password either on the command line, or be prompted
+
+-s SUPERVISORS, --supervisors SUPERVISORS
+If not specified in the defaults file, use this for the xMatters User IDs of the default Supervisor(s) for added users. This is a comma-separated list of values, e.g. mySuper.one,mySuper.two [default: None]
+
+-U UDF_NAME, --udf UDF_NAME
+If not specified in the defaults file, use this for the User Defined Field. [default: None]
+
+-u USER, --user USER  If not specified in the defaults file, use -u to specify the xmatters user id that has permissions to get/update Site, Users, Devices, and Groups.
+
+-V, --version         show program's version number and exit
+
+-v                    set verbosity level. Each occurrence of v increases the logging level. By default it is ERRORs only, a single v (-v) means add WARNING logging, a double v (-vv) means add INFO logging, and a tripple v (-vvv) means add DEBUG logging [default: 0]
+
+-x XMOD_URL, --xmodurl XMOD_URL
+If not specified in the defaults file, use -i to specify the base URL of your xmatters instance. For example, 'https://myco.hosted.xmatters.com' without quotes.
+
+```
 * You can add multiple "v"'s to the -v command line option.  
    * A single "-v" means only show errors and warnings
    * A double "-vv" means to show errors, warnings, and info statements
