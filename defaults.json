@@ -1,0 +1,13 @@
+{
+	"xmodURL": "https://<mycompany>.<myserver>.xmatters.com",
+	"user": "MyUser",
+	"password": "MyPassword",
+	"outDirectory": ".",
+	"dirSep": "/",
+	"propertiesFilename": "FourSeasonsBySite.xlsx",
+	"logFilename": "NewPropertiesResults",
+	"verbosity": 0,
+    "instance":  "np|prod",
+    "udfName": "<name of UDF to hold _nice_ Property Name>",
+    "supervisors": "<Comma separated list of default User supervisor targetNames>"
+}
