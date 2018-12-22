@@ -1,0 +1,5 @@
+*.json
+*.xlsx
+*.log
+!defaults.json
+!NEW-PROPERTY-INPUT-TEMPLATE.xlsx
