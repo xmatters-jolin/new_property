@@ -22,7 +22,6 @@ A Python utility to help on-board a new Hotel Property.
 The user provides an input spreadsheet (template included) that defines a set of xMatters Sites, Administrative Users (per Site), and a Security Group (per Site).  The utility then reads that information and creates the related objects in either Non-Production or Production instances, and then updates the input Spreadsheet with the UUIDs of the created objects.
 
 # Installation
-Details of the installation go here. 
 
 ## Python / pyenv setup
 * [Python 3.7.1](https://www.python.org/downloads/release/python-371/) (I recommend using [pyenv](https://github.com/pyenv/pyenv) to get and manage your python installations)
@@ -43,7 +42,7 @@ All you need to do now is to create an appropriate defaults.json.  Use the inclu
 
 
 # Running
-Run one of these commands:
+`Run one of these commands:
 * `python3 new_property.py -v -c -d defaults.json sites`
    * Processes Sites only
 * `python3 new_property.py -v -c -d defaults.json admins`
@@ -52,9 +51,9 @@ Run one of these commands:
    * Processes Security Groups only
 * `python3 new_property.py -v -c -d defaults.json all`
    * Processes Sites, Admin Users, and Security Groups
-   
+`   
 
-# Troubleshooting
+# Usage / Troubleshooting
 ```
 python3 new_property.py -h
 
